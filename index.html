@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K. Radhir – Content Creator & Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ NAV ═══ -->
+<nav>
+  <span class="nav-logo">K.Radhir</span>
+  <ul class="nav-links">
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#demos">Live Demos</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+</nav>
+
+<!-- ═══════════════════════════════════════════ HERO ══ -->
+<section class="hero">
+  <div class="hero-badge">Content Creator &amp; Developer</div>
+  <h1><span class="grad">K. Radhir</span></h1>
+  <p class="hero-sub">I craft compelling digital experiences — from responsive web apps to engaging content that converts visitors into customers.</p>
+  <div class="hero-btns">
+    <a href="#demos" class="btn-primary">View Live Demos</a>
+    <a href="#about" class="btn-ghost">About Me</a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════ PORTFOLIO ══ -->
+<section class="section" id="portfolio">
+  <div class="section-label">Work</div>
+  <h2 class="section-title">Portfolio</h2>
+  <p class="section-desc">Selected projects spanning web development, UI design, and content creation.</p>
+  <div class="portfolio-grid">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="card-preview" style="background:linear-gradient(135deg,#0D1120,#1a0533)">
+        <div style="text-align:center;padding:20px">
+          <div style="font-size:13px;color:#A78BFA;font-weight:700;margin-bottom:8px">RESPONSIVE LANDING PAGE</div>
+          <div style="width:160px;height:90px;background:#0F172A;border-radius:10px;margin:0 auto;border:1px solid #7C3AED;display:flex;align-items:center;justify-content:center">
+            <div style="font-size:24px;font-weight:700;background:linear-gradient(135deg,#7C3AED,#06B6D4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Demo</div>
+          </div>
+        </div>
+        <span class="preview-label">LIVE</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Responsive Landing Page</div>
+        <div class="card-desc">Fully animated hero, feature grid, and conversion-focused CTA section. Mobile-first design.</div>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Animation</span></div>
+        <div class="card-actions">
+          <a href="#demos" class="btn-sm btn-sm-primary" onclick="openDemo('landing')">Live Demo</a>
+          <a href="#demos" class="btn-sm btn-sm-ghost">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="card-preview" style="background:linear-gradient(135deg,#0D1120,#001a2e)">
+        <div style="text-align:center;padding:20px">
+          <div style="font-size:13px;color:#67E8F9;font-weight:700;margin-bottom:8px">TODO / TASK APP</div>
+          <div style="display:flex;flex-direction:column;gap:6px;width:160px;margin:0 auto">
+            <div style="background:#1E293B;border-radius:6px;padding:7px 10px;font-size:11px;display:flex;gap:8px;align-items:center"><div style="width:14px;height:14px;border-radius:4px;background:linear-gradient(135deg,#7C3AED,#06B6D4)"></div>Build portfolio</div>
+            <div style="background:#1E293B;border-radius:6px;padding:7px 10px;font-size:11px;display:flex;gap:8px;align-items:center"><div style="width:14px;height:14px;border-radius:4px;border:2px solid #334155"></div>Design hero</div>
+          </div>
+        </div>
+        <span class="preview-label">LIVE</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Todo / Task Manager</div>
+        <div class="card-desc">Interactive task manager with priority levels, filters, and local persistence.</div>
+        <div class="tags"><span class="tag">JavaScript</span><span class="tag">UI/UX</span><span class="tag">Interactive</span></div>
+        <div class="card-actions">
+          <a href="#demos" class="btn-sm btn-sm-primary" onclick="openDemo('todo')">Live Demo</a>
+          <a href="#demos" class="btn-sm btn-sm-ghost">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="card-preview" style="background:linear-gradient(135deg,#0D1120,#001a1a)">
+        <div style="text-align:center;padding:20px">
+          <div style="font-size:13px;color:#67E8F9;font-weight:700;margin-bottom:8px">CALCULATOR APP</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:5px;width:120px;margin:0 auto">
+            <div style="background:#1E293B;border-radius:5px;padding:7px;font-size:12px;text-align:center;font-family:monospace">7</div>
+            <div style="background:#1E293B;border-radius:5px;padding:7px;font-size:12px;text-align:center;font-family:monospace">8</div>
+            <div style="background:rgba(124,58,237,.3);border-radius:5px;padding:7px;font-size:12px;text-align:center;color:#A78BFA">+</div>
+            <div style="background:#1E293B;border-radius:5px;padding:7px;font-size:12px;text-align:center;font-family:monospace">4</div>
+            <div style="background:#1E293B;border-radius:5px;padding:7px;font-size:12px;text-align:center;font-family:monospace">5</div>
+            <div style="background:rgba(124,58,237,.3);border-radius:5px;padding:7px;font-size:12px;text-align:center;color:#A78BFA">−</div>
+          </div>
+        </div>
+        <span class="preview-label">LIVE</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Calculator App</div>
+        <div class="card-desc">Fully functional calculator with expression history, keyboard support, and smooth animations.</div>
+        <div class="tags"><span class="tag">JavaScript</span><span class="tag">Math</span><span class="tag">Interactive</span></div>
+        <div class="card-actions">
+          <a href="#demos" class="btn-sm btn-sm-primary" onclick="openDemo('calc')">Live Demo</a>
+          <a href="#demos" class="btn-sm btn-sm-ghost">Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="card-preview" style="background:linear-gradient(135deg,#0D1120,#1a0a00)">
+        <div style="display:flex;height:100%;align-items:center;justify-content:center">
+          <div style="flex:1;height:100%;background:#7C3AED"></div>
+          <div style="flex:1;height:100%;background:#06B6D4"></div>
+          <div style="flex:1;height:100%;background:#10B981"></div>
+          <div style="flex:1;height:100%;background:#F59E0B"></div>
+          <div style="flex:1;height:100%;background:#EF4444"></div>
+        </div>
+        <span class="preview-label">LIVE</span>
+      </div>
+      <div class="card-body">
+        <div class="card-title">Color Palette Generator</div>
+        <div class="card-desc">Pick a seed color, choose a scheme, and generate exportable palettes instantly.</div>
+        <div class="tags"><span class="tag">JavaScript</span><span class="tag">Color Theory</span><span class="tag">Design Tool</span></div>
+        <div class="card-actions">
+          <a href="#demos" class="btn-sm btn-sm-primary" onclick="openDemo('palette')">Live Demo</a>
+          <a href="#demos" class="btn-sm btn-sm-ghost">Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════════════════════════ LIVE DEMOS ══ -->
+<div class="demos-section" id="demos">
+  <div class="section">
+    <div class="section-label">Interactive</div>
+    <h2 class="section-title">Project Demos</h2>
+    <p class="section-desc">Try these live — fully interactive projects you can actually use and test.</p>
+
+    <div class="demo-tabs">
+      <button class="demo-tab active" onclick="openDemo('landing')">🚀 Landing Page</button>
+      <button class="demo-tab" onclick="openDemo('todo')">✅ Todo App</button>
+      <button class="demo-tab" onclick="openDemo('calc')">🔢 Calculator</button>
+      <button class="demo-tab" onclick="openDemo('palette')">🎨 Color Palette</button>
+    </div>
+
+    <div class="demo-frame">
+      <div class="demo-topbar">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+        <div class="demo-url" id="demoUrl">portfolio.k-radhir.dev/landing</div>
+      </div>
+
+      <!-- Demo: Landing Page -->
+      <div class="demo-content active" id="demo-landing">
+        <div class="landing-demo">
+          <div class="ld-badge">✦ New Product Launch</div>
+          <h2 class="ld-h1">Build <span class="ld-grad">Faster</span><br>Ship Smarter</h2>
+          <p class="ld-sub">The all-in-one platform for modern developers. From idea to production in record time.</p>
+          <div class="ld-btns">
+            <button class="ld-btn1" onclick="this.textContent='🎉 Started!';setTimeout(()=>this.textContent='Get Started Free',2000)">Get Started Free</button>
+            <button class="ld-btn2" onclick="alert('▶ Video demo would play here')">Watch Demo ▶</button>
+          </div>
+          <div class="ld-stats">
+            <div><div class="ld-stat-n" id="ldN1">0</div><div class="ld-stat-l">Active Users</div></div>
+            <div><div class="ld-stat-n" id="ldN2">0</div><div class="ld-stat-l">Projects Shipped</div></div>
+            <div><div class="ld-stat-n" id="ldN3">0</div><div class="ld-stat-l">Countries</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo: Todo App -->
+      <div class="demo-content" id="demo-todo">
+        <div class="todo-demo">
+          <div class="todo-header">
+            <div class="todo-title-row">
+              <span class="todo-h">My Tasks</span>
+              <span class="todo-date" id="todoDate"></span>
+            </div>
+          </div>
+          <div class="todo-input-row">
+            <input class="todo-input" id="todoInput" placeholder="Add a new task..." onkeydown="if(event.key==='Enter')addTodo()">
+            <select id="todoPriority" class="todo-select">
+              <option value="high">🔴 High</option>
+              <option value="med" selected>🟡 Med</option>
+              <option value="low">🟢 Low</option>
+            </select>
+            <button class="todo-add" onclick="addTodo()">+ Add</button>
+          </div>
+          <div class="todo-filters">
+            <button class="todo-filter active" onclick="filterTodos('all',this)">All</button>
+            <button class="todo-filter" onclick="filterTodos('active',this)">Active</button>
+            <button class="todo-filter" onclick="filterTodos('done',this)">Done</button>
+          </div>
+          <div class="todo-list" id="todoList"></div>
+        </div>
+      </div>
+
+      <!-- Demo: Calculator -->
+      <div class="demo-content" id="demo-calc">
+        <div class="calc-demo">
+          <div class="calc-wrap">
+            <div class="calc-display">
+              <div class="calc-expr" id="calcExpr"></div>
+              <div class="calc-val" id="calcVal">0</div>
+            </div>
+            <div class="calc-btns">
+              <button class="c-btn c-clr" onclick="calcAction('C')">C</button>
+              <button class="c-btn c-clr" onclick="calcAction('±')">±</button>
+              <button class="c-btn c-clr" onclick="calcAction('%')">%</button>
+              <button class="c-btn c-op"  onclick="calcAction('÷')">÷</button>
+              <button class="c-btn c-num" onclick="calcAction('7')">7</button>
+              <button class="c-btn c-num" onclick="calcAction('8')">8</button>
+              <button class="c-btn c-num" onclick="calcAction('9')">9</button>
+              <button class="c-btn c-op"  onclick="calcAction('×')">×</button>
+              <button class="c-btn c-num" onclick="calcAction('4')">4</button>
+              <button class="c-btn c-num" onclick="calcAction('5')">5</button>
+              <button class="c-btn c-num" onclick="calcAction('6')">6</button>
+              <button class="c-btn c-op"  onclick="calcAction('−')">−</button>
+              <button class="c-btn c-num" onclick="calcAction('1')">1</button>
+              <button class="c-btn c-num" onclick="calcAction('2')">2</button>
+              <button class="c-btn c-num" onclick="calcAction('3')">3</button>
+              <button class="c-btn c-op"  onclick="calcAction('+')">+</button>
+              <button class="c-btn c-num c-zero" onclick="calcAction('0')">0</button>
+              <button class="c-btn c-num" onclick="calcAction('.')">.</button>
+              <button class="c-btn c-eq"  onclick="calcAction('=')">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo: Color Palette -->
+      <div class="demo-content" id="demo-palette">
+        <div class="palette-demo">
+          <div class="palette-title">Color Palette Generator</div>
+          <div class="palette-sub">Pick a color, choose a scheme, generate your palette.</div>
+          <div class="palette-controls">
+            <div class="palette-seed-row">
+              <span class="color-picker-label">Seed Color:</span>
+              <input type="color" class="color-picker" id="seedColor" value="#7C3AED" oninput="generatePalette()">
+            </div>
+            <div class="palette-scheme-btns">
+              <button class="scheme-btn active" onclick="setScheme('analogous',this)">Analogous</button>
+              <button class="scheme-btn" onclick="setScheme('complementary',this)">Complementary</button>
+              <button class="scheme-btn" onclick="setScheme('triadic',this)">Triadic</button>
+              <button class="scheme-btn" onclick="setScheme('monochromatic',this)">Mono</button>
+            </div>
+            <button class="palette-gen-btn" onclick="generatePalette()">↻ Randomize</button>
+          </div>
+          <div class="palette-swatches" id="paletteSwatch"></div>
+          <div class="palette-list" id="paletteList"></div>
+        </div>
+      </div>
+
+    </div><!-- /demo-frame -->
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════ SKILLS ══ -->
+<section class="section" id="skills">
+  <div class="section-label">Expertise</div>
+  <h2 class="section-title">Skills &amp; Craft</h2>
+  <p class="section-desc">Proficiency across design, development, and content creation.</p>
+  <div class="skills-grid" id="skillsGrid"></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════ AVAILABLE FOR HIRE ══ -->
+<div style="padding:60px 0" id="contact">
+  <div class="available-banner">
+    <div><span class="avail-dot"></span><span style="font-size:12px;color:#64748B;font-weight:600;letter-spacing:.1em">AVAILABILITY</span></div>
+    <div class="avail-title">Available for Hire</div>
+    <div class="avail-desc">Open to full-time roles, freelance projects, and content collaborations.</div>
+    <div class="avail-skills">
+      <span class="avail-skill">Front-end Developer</span>
+      <span class="avail-skill">UI/UX Designer</span>
+      <span class="avail-skill">Content Creator</span>
+      <span class="avail-skill">React Developer</span>
+      <span class="avail-skill">Landing Page Expert</span>
+    </div>
+    <button class="btn-primary" onclick="window.location='mailto:radhir@example.com'">Start a Project →</button>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════ ABOUT ══ -->
+<section class="section" id="about">
+  <div class="section-label">The Creator</div>
+  <div class="about-grid">
+    <div>
+      <div class="about-avatar">K</div>
+      <div class="about-name">K. Radhir</div>
+      <div class="about-role">// content_creator && developer</div>
+      <div class="about-bio">Full-stack creative who bridges the gap between technical execution and compelling storytelling. I build experiences that look great, work fast, and convert. Passionate about clean code and even cleaner design.</div>
+      <div class="about-stats">
+        <div><div class="stat-val">25+</div><div class="stat-label">Projects</div></div>
+        <div><div class="stat-val">100%</div><div class="stat-label">On-time</div></div>
+        <div><div class="stat-val">10+</div><div class="stat-label">Clients</div></div>
+      </div>
+    </div>
+    <div class="about-services">
+      <div class="service-item">
+        <div class="service-icon">🎨</div>
+        <div>
+          <div class="service-title">UI/UX Design</div>
+          <div class="service-desc">Figma to code — pixel-perfect interfaces with a focus on usability and delight.</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">⚡</div>
+        <div>
+          <div class="service-title">Web Development</div>
+          <div class="service-desc">React, HTML/CSS/JS apps built for performance, accessibility, and scale.</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">📱</div>
+        <div>
+          <div class="service-title">Content Creation</div>
+          <div class="service-desc">Video, graphics, and copy that captures attention and drives engagement.</div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🚀</div>
+        <div>
+          <div class="service-title">Landing Pages</div>
+          <div class="service-desc">Conversion-optimized landing pages that turn visitors into customers.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ CTA ══ -->
+<div class="cta-section">
+  <div class="section-label" style="text-align:center">Let's Work Together</div>
+  <h2 class="cta-title">Ready to Start a Project?</h2>
+  <p class="cta-sub">I'm open to exciting opportunities. Let's build something great together.</p>
+  <div class="hero-btns">
+    <button class="btn-primary" onclick="window.location='mailto:radhir@example.com'">Get in Touch</button>
+    <a href="#demos" class="btn-ghost">View More Work</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ FOOTER ══ -->
+<footer>
+  <div class="footer-copy">© 2026 K. Radhir. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Twitter</a>
+    <a href="#">Email</a>
+  </div>
+</footer>
+
+<!-- JS loaded at end of body -->
+<script src="script.js"></script>
+
+</body>
+</html>
